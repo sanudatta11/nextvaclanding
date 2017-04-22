@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/css/bootstrap-image-gallery.css">
+<link rel="stylesheet" href="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/css/demo.css">
+<div class="container">
+
+
+    <br>
+    <!-- The container for the list of example images -->
+    <div id="links">
+        <a data-gallery="" title="Students coding at NextVAC" href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17362418_498765087177750_4334719876820010518_n.jpg?oh=4dcde1ee7186631637a2d8653a7190ea&oe=596230C6" >
+            <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17362418_498765087177750_4334719876820010518_n.jpg?oh=4dcde1ee7186631637a2d8653a7190ea&oe=596230C6" style="height: 250px; width: 370px;">
+        </a>
+        <a data-gallery="" title="Soumyajit with the coders" href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17424748_498765057177753_1616834666683532414_n.jpg?oh=4b5c27c4dd5df432bea038ad091a0d42&oe=59586DC7" >
+            <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17424748_498765057177753_1616834666683532414_n.jpg?oh=4b5c27c4dd5df432bea038ad091a0d42&oe=59586DC7" style="height: 250px; width: 370px;">
+        </a>
+        <a data-gallery="" title="The laptop leveled up as server" href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17426391_498765080511084_3745446303941679083_n.jpg?oh=f321f939b28e4cc44bd9c21e698071dc&oe=59583C35" >
+            <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17426391_498765080511084_3745446303941679083_n.jpg?oh=f321f939b28e4cc44bd9c21e698071dc&oe=59583C35" style="height: 250px; width: 370px;">
+        </a>
+        <a data-gallery="" title="Students using the NextVAC Platform" href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17362076_498765003844425_6473238519198350404_n.jpg?oh=5cad82d335c5091b356156b47c614088&oe=599B024F" >
+            <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17362076_498765003844425_6473238519198350404_n.jpg?oh=5cad82d335c5091b356156b47c614088&oe=599B024F" style="height: 250px; width: 370px;">
+        </a>
+        <a data-gallery="" title="Natalia" href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17362511_498764997177759_3225786701290121483_n.jpg?oh=9d76ace92ceb3d3bfc7ae5762de42bc2&oe=595F6401" >
+            <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17362511_498764997177759_3225786701290121483_n.jpg?oh=9d76ace92ceb3d3bfc7ae5762de42bc2&oe=595F6401" style="height: 250px; width: 370px;">
+        </a>
+        <a data-gallery="" title="Natalia" href="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17309408_498765067177752_5211366780594999717_n.jpg?oh=31130e637a44ce54f2776490f709f52c&oe=5966E36A" >
+            <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/17309408_498765067177752_5211366780594999717_n.jpg?oh=31130e637a44ce54f2776490f709f52c&oe=5966E36A" style="height: 250px; width: 370px;">
+        </a>
+
+    </div>
+    <br>
+</div>
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">×</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation and button states -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/js/bootstrap-image-gallery.js"></script>
+<script src="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/js/demo.js"></script>
